@@ -3,7 +3,6 @@ import os
 
 def preparegame():
     guesses= []
-    guesses.clear()
     fails = 0
     lines = open('hangmanWords.txt').read().splitlines()
     word = random.choice(lines).upper()
