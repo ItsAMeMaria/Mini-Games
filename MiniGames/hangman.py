@@ -5,7 +5,7 @@ def preparegame():
     guesses= []
     guesses.clear()
     fails = 0
-    lines = open('MiniGames\hangmanWords.txt').read().splitlines()
+    lines = open('hangmanWords.txt').read().splitlines()
     word = random.choice(lines).upper()
     return word, guesses, fails
 
